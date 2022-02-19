@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".login.VerifyOTPActivity">
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Please enter 'NUMBER' sent to your phone"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/verifyotpactivity_pin_otp"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:itemCount="6"
+        app:itemHeight="50dp"
+        app:itemWidth="45dp"
+        app:itemRadius="3.5dp"
+        app:itemSpacing="0dp"
+        app:lineWidth="1.8dp"
+        app:viewType="rectangle"/>
+
+    <Button
+        android:id="@+id/verifyotpactivity_btn_ok"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="OK"/>
+
+</LinearLayout>

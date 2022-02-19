@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">as0</string>
+    <string name="SP_CHATROOMLIST">SP_CHATROOMLIST</string>
+    <string name="SP_MATCHING_ALGO_UID_LIST">SP_MATCHINGALGOUIDLIST</string>
+</resources>

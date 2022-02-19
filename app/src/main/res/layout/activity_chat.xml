@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chat.ChatActivity"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6">
+
+        <TextView
+            android:id="@+id/chatactivity_text_counterpartnickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatactivity_recyclerview_messagelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="88"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/chatactivity_edit_input"
+            android:layout_marginLeft="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chatactivity_btn_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"/>
+
+    </FrameLayout>
+
+</LinearLayout>

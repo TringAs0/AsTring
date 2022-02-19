@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/item_chat_room_counterpart.profile.image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:src="@mipmap/ic_launcher"
+            android:background="@drawable/profile_circle"/>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_chat_room_counterpart.nickname"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:text="cella_ioio"/>
+            <TextView
+                android:id="@+id/item_chat_room_latest.message"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center|left"
+                android:text="Hi, im cella_ioio, what is ur name?"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>
